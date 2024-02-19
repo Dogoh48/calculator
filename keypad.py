@@ -1,7 +1,14 @@
+"""
+Module containing the Keypad class.
+"""
+
 import tkinter as tk
 from tkinter import messagebox
 
 class Keypad(tk.Frame):
+    """
+    A keypad widget for a calculator application.
+    """
     def __init__(self, parent, keynames=[], columns=1, command=None, **kwargs):
         super().__init__(parent, **kwargs)
         self.keynames = keynames
@@ -10,6 +17,9 @@ class Keypad(tk.Frame):
         self.init_components()
 
     def init_components(self):
+        """
+        Initialize the keypad buttons.
+        """
         for idx, keyname in enumerate(self.keynames):
             row, col = divmod(idx, self.columns)
             button = tk.Button(self, text=keyname, width=5, height=2, font=('Arial', 12),
@@ -19,6 +29,9 @@ class Keypad(tk.Frame):
             self.columnconfigure(col, weight=1)
 
     def handle_click(self, key):
+        """
+        Handle button click events.
+        """
         if self.command:
             self.command(key)
 
