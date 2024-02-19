@@ -29,3 +29,7 @@ To run the calculator, follow these steps:
 - Press = to evaluate the expression and display the result.
 
 ![uml class diagram](./uml.png)
+
+# Which Requirements i'm not done yey?
+- if users entered 3*sqrt (function name) and presses DEL then delete sqrt (don't just delete "t").
+- If the expression is invalid, then change the color of the display, make a sound
