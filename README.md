@@ -13,11 +13,11 @@ This is a simple calculator application built using Python and Tkinter GUI libra
 To run the calculator, follow these steps:
 
 1. Clone the repository to your local machine:
-```git clone https://github.com/your-username/calculator.git
+```git clone https://github.com/your-username/calculator.git```
 2. Navigate to the project directory:
-```cd calculator
+```cd calculator```
 3. Run the main script:
-```python main.py
+```python main.py```
 4. The calculator application will open, allowing you to perform calculations.
 
 Usage
